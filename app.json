@@ -1,0 +1,14 @@
+{
+  "name": "artists-spotify",
+  "env": {
+    "RACK_ENV": "staging",
+    "RAILS_ENV": "staging",
+    "HOST": { "required": true },
+    "LANG": { "required": true },
+    "MAILER_SENDER_ADDRESS": "\"Artists Spotify\" <noreply@example.com>",
+    "SECRET_KEY_BASE": { "generator": "secret" }
+  },
+  "addons": [
+    "heroku-postgresql"
+  ]
+}
