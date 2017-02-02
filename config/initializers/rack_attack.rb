@@ -5,7 +5,7 @@ class Rack::Attack
   Rack::Attack.cache.store = ActiveSupport::Cache::MemoryStore.new
 
   # Allow all local traffic
-  whitelist('allow-localhost') do |req|
+  safelist('allow-localhost') do |req|
     '127.0.0.1' == req.ip || '::1' == req.ip
   end
 
@@ -25,4 +25,4 @@ class Rack::Attack
   }
 end
 
-Rails.application.config.middleware.middleware.use Rack::Attack
+Rails.application.config.middleware.use Rack::Attack
