@@ -22,7 +22,7 @@ class ArtistsSeeder
     record.save!
 
   rescue ActiveRecord::RecordInvalid => e
-    Rails.logger.info("Couldn't save the artist #{artist.id} message: #{e.to_s}")
+    Rails.logger.info("Couldn't save the artist #{artist.id} message: #{e.message}")
   end
 
   def build_record(artist)

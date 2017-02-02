@@ -41,10 +41,7 @@ Metrics/LineLength:
   Max: 120
 
 Lint/EndAlignment:
-  AlignWith: variable
-  SupportedStyles:
-    - keyword
-    - variable
+  EnforcedStyleAlignWith: variable
 
 Style/AlignParameters:
   EnforcedStyle: with_fixed_indentation
@@ -58,4 +55,10 @@ Style/FrozenStringLiteralComment:
 Style/StringMethods:
   Enabled: true
 Rails/HasAndBelongsToMany:
+  Enabled: false
+
+Rails/FilePath:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
   Enabled: false
