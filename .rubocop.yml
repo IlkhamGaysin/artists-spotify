@@ -11,6 +11,7 @@ AllCops:
     - db/**/*
     - lib/templates/**/*
     - vendor/**/*
+    - config/initializers/rack_attack.rb
 
 Rails/OutputSafety:
   Enabled: false
