@@ -15,8 +15,10 @@ gem 'puma', '~> 3.0'
 gem 'rack-cors'
 
 # main
-gem 'rspotify'
+gem 'active_model_serializers'
+gem 'decent_exposure'
 gem 'responders'
+gem 'rspotify'
 
 group :development, :test do
   gem 'awesome_print'
