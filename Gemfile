@@ -13,9 +13,12 @@ gem 'puma', '~> 3.0'
 
 # CORS
 gem 'rack-cors'
+gem 'rack-attack'
+
+# json
+gem 'active_model_serializers'
 
 # main
-gem 'active_model_serializers'
 gem 'decent_exposure'
 gem 'responders'
 gem 'rspotify'
