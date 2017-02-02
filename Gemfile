@@ -24,6 +24,7 @@ group :development, :test do
   gem 'awesome_print'
   gem 'byebug', platform: :mri
   gem 'dotenv-rails'
+  gem 'faker'
 end
 
 group :development do
