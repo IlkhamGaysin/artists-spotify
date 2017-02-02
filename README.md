@@ -1,24 +1,35 @@
-# README
+# Artists Spotify
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![Build Status](https://semaphoreci.com/api/v1/ilkhamgaysin/artists-spotify/branches/master/shields_badge.svg)](https://semaphoreci.com/ilkhamgaysin/artists-spotify)
 
-Things you may want to cover:
+The project was built while working on simple test task.
+It's API that allows to show artists from spotify and update a specified artist as a favorite.
 
-* Ruby version
+## Dependencies
 
-* System dependencies
+* PostgreSQL
+* Ruby 2.3.1
+* Rails 5
 
-* Configuration
+## Quick Start
 
-* Database creation
+```bash
+# clone
+git clone git@github.com:IlkhamGaysin/artists-spotify.git
+cd artists-spotify
 
-* Database initialization
+# run setup script
+bin/setup
 
-* How to run the test suite
+# configure ENV variables in .env
+vim .env
 
-* Services (job queues, cache servers, search engines, etc.)
+# run server on 5000 port
+bin/server
+```
 
-* Deployment instructions
+## Scripts
 
-* ...
+* `bin/setup` - setup required gems and migrate db if needed
+* `bin/quality` - run brakeman and rails_best_practices for the app
+* `bin/ci` - should be used in the CI to run specs
