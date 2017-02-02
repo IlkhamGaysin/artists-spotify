@@ -5,7 +5,11 @@ Rails.application.routes.draw do
     constraints subdomain: 'api' do
       scope module: 'api' do
         namespace :v1 do
-          resources :artists, only: [:index, :update]
+          resources :artists, only: %i(index update)
+
+          namespace :filters do
+            resources :artists, only: %i(index)
+          end
         end
       end
     end
