@@ -16,6 +16,7 @@ gem 'rack-cors'
 
 # main
 gem 'rspotify'
+gem 'responders'
 
 group :development, :test do
   gem 'awesome_print'
