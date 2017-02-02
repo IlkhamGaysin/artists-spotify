@@ -27,7 +27,9 @@ class SortedArtistsQuery
 
     return @relation unless genres.present? && genres.is_a?(Array)
 
-    @relation.where("genres ?|| array[#{genres.join(',')}]")
+    genres = genres.map { |genre| "'#{genre}'" } * ','
+
+    @relation.where("genres::jsonb ?| array[#{genres}]")
   end
 
   def by_favorite
