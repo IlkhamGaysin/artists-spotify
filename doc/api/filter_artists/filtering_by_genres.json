@@ -34,18 +34,18 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"spotify_id\": \"7507690319\",\n    \"name\": \"Chesley Zulauf II\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/oran_carroll\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/mabel.feeney\",\n    \"genres\": [\n      \"house\"\n    ]\n  }\n]",
+      "response_body": "[\n  {\n    \"spotify_id\": \"2577609650\",\n    \"name\": \"Carmelo Bartell DDS\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/darian_becker\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/icie\",\n    \"genres\": [\n      \"house\"\n    ]\n  }\n]",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"50ac3ace44eb0272718bcb5811d66ac7\"",
+        "ETag": "W/\"5c7dafee31afdf31c72d281cb67227a8\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "08b1225e-49af-497a-846c-7d41f05bb315",
-        "X-Runtime": "0.008730",
+        "X-Request-Id": "cb1567fb-47e1-4983-9315-bb4d6097f2ef",
+        "X-Runtime": "0.009359",
         "Vary": "Origin",
-        "Content-Length": "209"
+        "Content-Length": "204"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": "curl \"http://localhost:5000api/v1/filters/artists?genres[]=house\" -X GET \\\n\t-H \"Accept: application/json\""

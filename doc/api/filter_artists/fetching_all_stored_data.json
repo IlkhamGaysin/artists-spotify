@@ -26,18 +26,18 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"spotify_id\": \"5874082656\",\n    \"name\": \"Mathias Reilly\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/brennan\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/kyle\",\n    \"genres\": [\n      \"ambient\"\n    ]\n  },\n  {\n    \"spotify_id\": \"1142160880\",\n    \"name\": \"Robbie Stiedemann\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/myrtice\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/ryleigh.mckenzie\",\n    \"genres\": [\n      \"house\"\n    ]\n  },\n  {\n    \"spotify_id\": \"6334206393\",\n    \"name\": \"Fabiola Cronin\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/wilburn\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/eulalia\",\n    \"genres\": [\n      \"deep\"\n    ]\n  }\n]",
+      "response_body": "[\n  {\n    \"spotify_id\": \"5662054553\",\n    \"name\": \"Quinn Abernathy\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/zack.sauer\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/jalyn_ernser\",\n    \"genres\": [\n      \"ambient\"\n    ]\n  },\n  {\n    \"spotify_id\": \"2024501851\",\n    \"name\": \"Jermain Mohr\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/celestine\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/kaya_dubuque\",\n    \"genres\": [\n      \"house\"\n    ]\n  },\n  {\n    \"spotify_id\": \"4592841230\",\n    \"name\": \"Jaquelin Renner\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/watson\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/kamron_kaulke\",\n    \"genres\": [\n      \"deep\"\n    ]\n  }\n]",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"c2a3f12fb48d195c70137f4f879f5532\"",
+        "ETag": "W/\"b3a0f3261fda5fb3497b3ffc5fddbdd6\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "29634b5f-4ced-4337-ad4e-aa079b4fa1eb",
-        "X-Runtime": "0.022829",
+        "X-Request-Id": "84ec64e8-5d30-416b-99bc-40be5b081e56",
+        "X-Runtime": "0.022729",
         "Vary": "Origin",
-        "Content-Length": "596"
+        "Content-Length": "607"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": "curl \"http://localhost:5000api/v1/filters/artists\" -X GET \\\n\t-H \"Accept: application/json\""

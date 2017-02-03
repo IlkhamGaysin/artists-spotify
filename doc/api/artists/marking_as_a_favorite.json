@@ -19,7 +19,7 @@
   "requests": [
     {
       "request_method": "PUT",
-      "request_path": "api/v1/artists/391",
+      "request_path": "api/v1/artists/403",
       "request_body": "artist[favorite]=true",
       "request_headers": {
         "Accept": "application/json",
@@ -38,12 +38,12 @@
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Cache-Control": "no-cache",
-        "X-Request-Id": "2f86143b-1ecf-4b00-9a8b-2f312fc1b3a4",
-        "X-Runtime": "0.042105",
+        "X-Request-Id": "3df1bb10-201d-427c-8bfd-5b70676fbf66",
+        "X-Runtime": "0.038893",
         "Vary": "Origin"
       },
       "response_content_type": null,
-      "curl": "curl \"http://localhost:5000api/v1/artists/391\" -d 'artist[favorite]=true' -X PUT \\\n\t-H \"Accept: application/json\""
+      "curl": "curl \"http://localhost:5000api/v1/artists/403\" -d 'artist[favorite]=true' -X PUT \\\n\t-H \"Accept: application/json\""
     }
   ]
 }
