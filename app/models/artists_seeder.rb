@@ -7,15 +7,15 @@ class ArtistsSeeder
 
   def persist!
     @artists.each do |artist|
-      save_artist!(artist) unless record_exists?(artist.id)
+      save_artist!(artist) unless record_exists?(artist)
     end
   end
 
-  private
-
-  def record_exists?(id)
-    Artist.exists?(spotify_id: id)
+  def record_exists?(artist)
+    Artist.exists?(spotify_id: artist.id)
   end
+
+  private
 
   def save_artist!(artist)
     record = build_record(artist)

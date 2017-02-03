@@ -2,9 +2,9 @@ require "rails_helper"
 
 describe SortedArtistsQuery do
   describe "#all" do
-    let(:params) { Hash.new }
-
     subject(:all) { described_class.new(params).all }
+
+    let(:params) { Hash.new }
 
     context "without filtering" do
       let!(:artist_1) { create :artist, name: "Bob" }
@@ -32,12 +32,12 @@ describe SortedArtistsQuery do
 
     context "by genres" do
       let!(:params) do
-        { genres: ["house"] }
+        { genres: %w(house) }
       end
 
-      let!(:artist_1) { create :artist, genres: ["house"] }
-      let!(:artist_2) { create :artist, genres: ["house", 'ambient'] }
-      let!(:artist_3) { create :artist, genres: ["folk", 'ambient'] }
+      let!(:artist_1) { create :artist, genres: %w(house) }
+      let!(:artist_2) { create :artist, genres: %w(house ambient) }
+      let!(:artist_3) { create :artist, genres: %w(folk ambient) }
 
       it "returns related to genres records" do
         expect(all.size).to eq(2)
@@ -52,13 +52,12 @@ describe SortedArtistsQuery do
       end
 
       let!(:artist_1) { create :artist, favorite: true }
-      let!(:artist_2) { create :artist, favorite: true }
-      let!(:artist_3) { create :artist, favorite: false }
+      let!(:artist_2) { create :artist, favorite: false }
 
       it "returns favorit records" do
-        expect(all.size).to eq(2)
-        expect(all).to match_array([artist_1, artist_2])
-        expect(all).not_to include(artist_3)
+        expect(all.size).to eq(1)
+        expect(all).to eq([artist_1])
+        expect(all).not_to include(artist_2)
       end
     end
   end

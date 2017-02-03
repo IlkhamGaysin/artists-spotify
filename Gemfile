@@ -43,8 +43,8 @@ group :development, :test do
   gem "factory_girl_rails"
   gem "faker"
   gem "rspec-rails"
-  gem "rubocop"
-  gem "rubocop-rspec"
+  gem "rubocop", require: false
+  gem "rubocop-rspec", require: false
 end
 
 group :test do
