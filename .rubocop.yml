@@ -63,3 +63,6 @@ Rails/FilePath:
 
 Style/ClassAndModuleChildren:
   Enabled: false
+
+Metrics/BlockLength:
+  Max: 30
