@@ -2,6 +2,7 @@
 
 [![Build Status](https://semaphoreci.com/api/v1/ilkhamgaysin/artists-spotify/branches/master/shields_badge.svg)](https://semaphoreci.com/ilkhamgaysin/artists-spotify)
 [![Code Climate](https://codeclimate.com/github/IlkhamGaysin/artists-spotify/badges/gpa.svg)](https://codeclimate.com/github/IlkhamGaysin/artists-spotify)
+[![Test Coverage](https://codeclimate.com/github/IlkhamGaysin/artists-spotify/badges/coverage.svg)](https://codeclimate.com/github/IlkhamGaysin/artists-spotify/coverage)
 
 The project was built while working on simple test task.
 It's API that allows to show artists from spotify and update a specified artist as a favorite.
@@ -21,12 +22,6 @@ I was caught up in doing the test task so that decided to add basic filers: by_n
 2. Format the result set with just the spotify id, external_urls, genres, href and name.
 3. Create an action to a mark an artist as a favourite, store the formatted result set.
 4. API only, no views. Responses should return JSON.
-
-## Servers
-[Heroku production](https://artists-spotify.herokuapp.com)
-
-## API
-[API Documentation](https://artists-spotify.herokuapp.com/api/docs)
 
 ## Dependencies
 
@@ -56,3 +51,11 @@ bin/server
 * `bin/setup` - setup required gems and migrate db if needed
 * `bin/quality` - run brakeman and rails_best_practices for the app
 * `bin/ci` - should be used in the CI to run specs
+
+## Servers
+
+[Heroku production](https://artists-spotify.herokuapp.com)
+
+## API
+
+[API Documentation](https://artists-spotify.herokuapp.com/api/docs)
