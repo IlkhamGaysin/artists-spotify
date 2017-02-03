@@ -1,0 +1,50 @@
+{
+  "resource": "Filter Artists",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "api/v1/filters/artists",
+  "description": "filtering by favorited",
+  "explanation": "This method filters only favorited artists.",
+  "parameters": [
+    {
+      "name": "favorite",
+      "description": true
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "api/v1/filters/artists?favorite=true",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "favorite": "true"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"spotify_id\": \"9956074539\",\n    \"name\": \"Dejah Gibson DDS\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/gina\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/augusta\",\n    \"genres\": [\n      \"ambient\"\n    ]\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"c3a2908615d1f4c00d9e30d27236d076\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "4d9649a3-3b18-4617-be43-f2e7d40e6ae8",
+        "X-Runtime": "0.008879",
+        "Vary": "Origin",
+        "Content-Length": "197"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:5000api/v1/filters/artists?favorite=true\" -X GET \\\n\t-H \"Accept: application/json\""
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "resource": "Artists",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "api/v1/artists",
+  "description": "fethcing all data",
+  "explanation": "This method fetch all artists",
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "api/v1/artists",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"spotify_id\": \"8076362075\",\n    \"name\": \"Myrl Schaden\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/allen\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/domenica\",\n    \"genres\": [\n      \"house\",\n      \"techno\"\n    ]\n  },\n  {\n    \"spotify_id\": \"3156266406\",\n    \"name\": \"Justus Jacobi\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/braden\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/sebastian\",\n    \"genres\": [\n      \"disco\",\n      \"house\"\n    ]\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"5e5f528d0644af308dbcd4c78e636ae8\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "2b518027-5b72-4bce-b2cf-13bf290559af",
+        "X-Runtime": "0.066635",
+        "Vary": "Origin",
+        "Content-Length": "405"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:5000api/v1/artists\" -X GET \\\n\t-H \"Accept: application/json\""
+    }
+  ]
+}

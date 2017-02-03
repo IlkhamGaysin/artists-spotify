@@ -1,0 +1,54 @@
+{
+  "resource": "Filter Artists",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "api/v1/filters/artists",
+  "description": "filtering by genres",
+  "explanation": "This method filters artists only by genres passed.",
+  "parameters": [
+    {
+      "name": "genres",
+      "description": [
+        "house"
+      ]
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "api/v1/filters/artists?genres[]=house",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "genres": [
+          "house"
+        ]
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"spotify_id\": \"7507690319\",\n    \"name\": \"Chesley Zulauf II\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/oran_carroll\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/mabel.feeney\",\n    \"genres\": [\n      \"house\"\n    ]\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"50ac3ace44eb0272718bcb5811d66ac7\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "08b1225e-49af-497a-846c-7d41f05bb315",
+        "X-Runtime": "0.008730",
+        "Vary": "Origin",
+        "Content-Length": "209"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:5000api/v1/filters/artists?genres[]=house\" -X GET \\\n\t-H \"Accept: application/json\""
+    }
+  ]
+}
