@@ -1,5 +1,5 @@
 class SortedArtistsQuery
-  FILTERS = %i(by_name by_genres by_favorite)
+  FILTERS = %i(by_name by_genres by_favorite).freeze
 
   def initialize(params = {}, relation = Artist.all)
     @relation = relation
@@ -27,7 +27,7 @@ class SortedArtistsQuery
 
     return @relation unless genres.present? && genres.is_a?(Array)
 
-    genres = genres.map { |genre| "'#{genre}'" } * ','
+    genres = genres.map { |genre| "'#{genre}'" } * ","
 
     @relation.where("genres::jsonb ?| array[#{genres}]")
   end
