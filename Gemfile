@@ -46,7 +46,7 @@ group :development, :test do
 end
 
 group :test do
-  gem "codeclimate-test-reporter", '< 1.0', require: false
+  gem "codeclimate-test-reporter", "< 1.0", require: false
   gem "database_cleaner"
   gem "json_spec"
   gem "shoulda-matchers", require: false
