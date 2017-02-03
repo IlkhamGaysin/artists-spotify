@@ -24,7 +24,7 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"spotify_id\": \"9562906251\",\n    \"name\": \"Dr. Anastacio Cole\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/cooper\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/lesley\",\n    \"genres\": [\n      \"house\",\n      \"ambient\"\n    ]\n  },\n  {\n    \"spotify_id\": \"4507429384\",\n    \"name\": \"Kallie Weissnat PhD\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/jason\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/deon\",\n    \"genres\": [\n      \"disco\",\n      \"techno\"\n    ]\n  }\n]",
+      "response_body": "[\n  {\n    \"spotify_id\": \"5626410046\",\n    \"name\": \"Shyann Mosciski\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/brown_frami\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/okey\",\n    \"genres\": [\n      \"techno\",\n      \"breakbeat\"\n    ]\n  },\n  {\n    \"spotify_id\": \"8920179809\",\n    \"name\": \"Dr. Adan Harris\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/emmitt_skiles\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/alison\",\n    \"genres\": [\n      \"techno\",\n      \"disco\"\n    ]\n  }\n]",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

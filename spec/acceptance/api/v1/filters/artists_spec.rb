@@ -11,8 +11,8 @@ resource "Filter Artists" do
 
   get "/api/v1/filters/artists" do
     example_request "Fetching artists" do
-      explanation %Q{This method fetchs all artists
-                      when there is no filter parameter.}
+      explanation %(This method fetchs all artists
+                      when there is no filter parameter.)
 
       expect(body).to be
       expect(body.size).to eq 3

@@ -19,7 +19,7 @@
   "requests": [
     {
       "request_method": "PUT",
-      "request_path": "/api/v1/artists/22",
+      "request_path": "/api/v1/artists/34",
       "request_body": "artist[favorite]=true",
       "request_headers": {
         "Accept": "application/json"
@@ -33,7 +33,7 @@
       "response_headers": {
       },
       "response_content_type": null,
-      "curl": "curl \"http://localhost:5000/api/v1/artists/22\" -d 'artist[favorite]=true' -X PUT \\\n\t-H \"Accept: application/json\""
+      "curl": "curl \"http://localhost:5000/api/v1/artists/34\" -d 'artist[favorite]=true' -X PUT \\\n\t-H \"Accept: application/json\""
     }
   ]
 }
