@@ -19,10 +19,13 @@ gem "rack-cors"
 gem "active_model_serializers"
 
 # main
-gem "apitome"
 gem "decent_exposure"
 gem "responders"
 gem "rspotify"
+
+# doc
+gem "apitome"
+gem "rspec_api_documentation"
 
 group :development do
   gem "bullet"
@@ -40,7 +43,6 @@ group :development, :test do
   gem "factory_girl_rails"
   gem "faker"
   gem "rspec-rails"
-  gem "rspec_api_documentation"
   gem "rubocop"
   gem "rubocop-rspec"
 end
