@@ -7,7 +7,6 @@ It's API that allows to show artists from spotify and update a specified artist 
 
 ## Additional features
 
-* Filtering artists
 I was caught up in doing the test task so that decided to add basic filers: by_name, by_genres, by_favorites
 
 ## Business Requirements
