@@ -1,0 +1,39 @@
+{
+  "resource": "Update artist",
+  "resource_explanation": null,
+  "http_method": "PUT",
+  "route": "/api/v1/artists/:id",
+  "description": "Marking as favorite",
+  "explanation": "This method marks as favorite specified in :id artist.",
+  "parameters": [
+    {
+      "required": true,
+      "scope": "artist",
+      "name": "favorite",
+      "description": true
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "PUT",
+      "request_path": "/api/v1/artists/22",
+      "request_body": "artist[favorite]=true",
+      "request_headers": {
+        "Accept": "application/json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 204,
+      "response_status_text": "No Content",
+      "response_body": null,
+      "response_headers": {
+      },
+      "response_content_type": null,
+      "curl": "curl \"http://localhost:5000/api/v1/artists/22\" -d 'artist[favorite]=true' -X PUT \\\n\t-H \"Accept: application/json\""
+    }
+  ]
+}

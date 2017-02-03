@@ -1,0 +1,39 @@
+{
+  "resource": "Filter Artists",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/filters/artists",
+  "description": "filtering by favorited",
+  "explanation": "This method filters only favorited artists.",
+  "parameters": [
+    {
+      "name": "favorite",
+      "description": true
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/filters/artists?favorite=true",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json"
+      },
+      "request_query_parameters": {
+        "favorite": "true"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"spotify_id\": \"3033625713\",\n    \"name\": \"Ramiro Collier\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/leone\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/ransom_lakin\",\n    \"genres\": [\n      \"ambient\"\n    ]\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:5000/api/v1/filters/artists?favorite=true\" -X GET \\\n\t-H \"Accept: application/json\""
+    }
+  ]
+}

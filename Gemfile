@@ -1,9 +1,6 @@
 source "https://rubygems.org"
 
-git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
-  "https://github.com/#{repo_name}.git"
-end
+ruby "2.3.1"
 
 gem "pg"
 gem "rails", "~> 5.0.1"
@@ -23,10 +20,6 @@ gem "decent_exposure"
 gem "responders"
 gem "rspotify"
 
-# doc
-gem "apitome"
-gem "rspec_api_documentation"
-
 group :development do
   gem "bullet"
   gem "listen", "~> 3.0.5"
@@ -36,20 +29,22 @@ group :development do
 end
 
 group :development, :test do
+  gem "apitome"
   gem "brakeman"
   gem "bundler-audit"
   gem "byebug", platform: :mri
+  gem "database_cleaner"
   gem "dotenv-rails"
   gem "factory_girl_rails"
   gem "faker"
   gem "rspec-rails"
+  gem "rspec_api_documentation"
   gem "rubocop", require: false
   gem "rubocop-rspec", require: false
 end
 
 group :test do
   gem "codeclimate-test-reporter", "< 1.0", require: false
-  gem "database_cleaner"
   gem "json_spec"
   gem "shoulda-matchers", require: false
   gem "webmock", require: false

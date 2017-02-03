@@ -1,0 +1,43 @@
+{
+  "resource": "Filter Artists",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/filters/artists",
+  "description": "filtering by genres",
+  "explanation": "This method filters artists only by genres passed.",
+  "parameters": [
+    {
+      "name": "genres",
+      "description": [
+        "house"
+      ]
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/filters/artists?genres[]=house",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json"
+      },
+      "request_query_parameters": {
+        "genres": [
+          "house"
+        ]
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"spotify_id\": \"4810446284\",\n    \"name\": \"Viviane Torp PhD\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/anita_quitzon\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/vena\",\n    \"genres\": [\n      \"house\"\n    ]\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:5000/api/v1/filters/artists?genres[]=house\" -X GET \\\n\t-H \"Accept: application/json\""
+    }
+  ]
+}

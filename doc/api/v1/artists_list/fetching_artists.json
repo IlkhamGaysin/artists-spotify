@@ -1,0 +1,35 @@
+{
+  "resource": "Artists List",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/artists",
+  "description": "Fetching artists",
+  "explanation": "This method fetchs all collection of artists.",
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/artists",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"spotify_id\": \"9562906251\",\n    \"name\": \"Dr. Anastacio Cole\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/cooper\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/lesley\",\n    \"genres\": [\n      \"house\",\n      \"ambient\"\n    ]\n  },\n  {\n    \"spotify_id\": \"4507429384\",\n    \"name\": \"Kallie Weissnat PhD\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/jason\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/deon\",\n    \"genres\": [\n      \"disco\",\n      \"techno\"\n    ]\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:5000/api/v1/artists\" -X GET \\\n\t-H \"Accept: application/json\""
+    }
+  ]
+}
