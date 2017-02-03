@@ -1,6 +1,7 @@
 # Artists Spotify
 
 [![Build Status](https://semaphoreci.com/api/v1/ilkhamgaysin/artists-spotify/branches/master/shields_badge.svg)](https://semaphoreci.com/ilkhamgaysin/artists-spotify)
+[![Code Climate](https://codeclimate.com/github/IlkhamGaysin/artists-spotify/badges/gpa.svg)](https://codeclimate.com/github/IlkhamGaysin/artists-spotify)
 
 The project was built while working on simple test task.
 It's API that allows to show artists from spotify and update a specified artist as a favorite.
