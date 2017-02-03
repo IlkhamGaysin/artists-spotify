@@ -35,5 +35,7 @@ module ArtistsSpotify
 
     # Set URL options to be able to use url_for helpers
     config.action_mailer.default_url_options = { host: ENV.fetch("HOST") }
+
+    config.host = ENV.fetch("HOST")
   end
 end
