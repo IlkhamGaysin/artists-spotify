@@ -29,7 +29,7 @@ group :development do
 end
 
 group :development, :test do
-  gem "apitome"
+  gem "apitome", require: false
   gem "brakeman"
   gem "bundler-audit"
   gem "byebug", platform: :mri
@@ -38,7 +38,7 @@ group :development, :test do
   gem "factory_girl_rails"
   gem "faker"
   gem "rspec-rails"
-  gem "rspec_api_documentation"
+  gem "rspec_api_documentation", require: false
   gem "rubocop", require: false
   gem "rubocop-rspec", require: false
 end
