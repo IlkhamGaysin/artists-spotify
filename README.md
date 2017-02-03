@@ -5,6 +5,23 @@
 The project was built while working on simple test task.
 It's API that allows to show artists from spotify and update a specified artist as a favorite.
 
+## Additional features
+
+* Filtering artists
+I was caught up in doing the test task so that decided to add basic filers: by_name, by_genres, by_favorites
+
+## Business Requirements
+
+1. Return the artists and re-format the results, provide a default artist value for the root url.
+2. Fetch an artist and save as a favourite
+
+## Technical Requirements
+
+1. Create a Rails 5 project, store code on Github or BitBucket. The application needs to be deployed on Heroku.
+2. Format the result set with just the spotify id, external_urls, genres, href and name.
+3. Create an action to a mark an artist as a favourite, store the formatted result set.
+4. API only, no views. Responses should return JSON.
+
 ## Dependencies
 
 * PostgreSQL
