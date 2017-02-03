@@ -17,12 +17,12 @@ gem "active_model_serializers"
 
 # main
 gem "decent_exposure"
+gem "listen", "~> 3.0.5"
 gem "responders"
 gem "rspotify"
 
 group :development do
   gem "bullet"
-  gem "listen", "~> 3.0.5"
   gem "spring"
   gem "spring-commands-rspec"
   gem "spring-watcher-listen", "~> 2.0.0"
