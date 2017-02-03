@@ -1,24 +1,51 @@
-# README
+# Artists Spotify
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![Build Status](https://semaphoreci.com/api/v1/ilkhamgaysin/artists-spotify/branches/master/shields_badge.svg)](https://semaphoreci.com/ilkhamgaysin/artists-spotify)
 
-Things you may want to cover:
+The project was built while working on simple test task.
+It's API that allows to show artists from spotify and update a specified artist as a favorite.
 
-* Ruby version
+## Additional features
 
-* System dependencies
+I was caught up in doing the test task so that decided to add basic filers: by_name, by_genres, by_favorites
 
-* Configuration
+## Business Requirements
 
-* Database creation
+1. Return the artists and re-format the results, provide a default artist value for the root url.
+2. Fetch an artist and save as a favourite
 
-* Database initialization
+## Technical Requirements
 
-* How to run the test suite
+1. Create a Rails 5 project, store code on Github or BitBucket. The application needs to be deployed on Heroku.
+2. Format the result set with just the spotify id, external_urls, genres, href and name.
+3. Create an action to a mark an artist as a favourite, store the formatted result set.
+4. API only, no views. Responses should return JSON.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Dependencies
 
-* Deployment instructions
+* PostgreSQL
+* Ruby 2.3.1
+* Rails 5
 
-* ...
+## Quick Start
+
+```bash
+# clone
+git clone git@github.com:IlkhamGaysin/artists-spotify.git
+cd artists-spotify
+
+# run setup script
+bin/setup
+
+# configure ENV variables in .env
+vim .env
+
+# run server on 5000 port
+bin/server
+```
+
+## Scripts
+
+* `bin/setup` - setup required gems and migrate db if needed
+* `bin/quality` - run brakeman and rails_best_practices for the app
+* `bin/ci` - should be used in the CI to run specs

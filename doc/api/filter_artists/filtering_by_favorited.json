@@ -1,0 +1,50 @@
+{
+  "resource": "Filter Artists",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "api/v1/filters/artists",
+  "description": "filtering by favorited",
+  "explanation": "This method filters only favorited artists.",
+  "parameters": [
+    {
+      "name": "favorite",
+      "description": true
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "api/v1/filters/artists?favorite=true",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "favorite": "true"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"spotify_id\": \"9934251667\",\n    \"name\": \"Mr. Zachary Ankunding\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/casandra_bauch\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/hubert.gleason\",\n    \"genres\": [\n      \"ambient\"\n    ]\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"69fabacd1d90415e19300af64517db25\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "9000fa3d-f903-4ed1-8815-8109c32ba551",
+        "X-Runtime": "0.008647",
+        "Vary": "Origin",
+        "Content-Length": "219"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:5000api/v1/filters/artists?favorite=true\" -X GET \\\n\t-H \"Accept: application/json\""
+    }
+  ]
+}
