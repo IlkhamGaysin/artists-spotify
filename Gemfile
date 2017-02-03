@@ -16,9 +16,11 @@ gem "rack-cors"
 gem "active_model_serializers"
 
 # main
+gem "apitome"
 gem "decent_exposure"
 gem "listen", "~> 3.0.5"
 gem "responders"
+gem "rspec_api_documentation"
 gem "rspotify"
 
 group :development do
@@ -29,7 +31,6 @@ group :development do
 end
 
 group :development, :test do
-  gem "apitome"
   gem "brakeman"
   gem "bundler-audit"
   gem "byebug", platform: :mri
@@ -38,7 +39,6 @@ group :development, :test do
   gem "factory_girl_rails"
   gem "faker"
   gem "rspec-rails"
-  gem "rspec_api_documentation"
   gem "rubocop", require: false
   gem "rubocop-rspec", require: false
 end
