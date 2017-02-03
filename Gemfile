@@ -19,6 +19,7 @@ gem "rack-cors"
 gem "active_model_serializers"
 
 # main
+gem "apitome"
 gem "decent_exposure"
 gem "responders"
 gem "rspotify"
@@ -32,7 +33,6 @@ group :development do
 end
 
 group :development, :test do
-  gem "apitome"
   gem "brakeman"
   gem "bundler-audit"
   gem "byebug", platform: :mri
