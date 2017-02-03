@@ -1,9 +1,9 @@
 {
-  "resource": "Artists List",
+  "resource": "Artists list",
   "resource_explanation": null,
   "http_method": "GET",
   "route": "/api/v1/artists",
-  "description": "Fetching artists",
+  "description": "Fetching collection",
   "explanation": "This method fetchs all collection of artists.",
   "parameters": [
 
@@ -24,7 +24,7 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"spotify_id\": \"8120865543\",\n    \"name\": \"Edwina Grant\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/domenica\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/annamae\",\n    \"genres\": [\n      \"house\",\n      \"breakbeat\"\n    ]\n  },\n  {\n    \"spotify_id\": \"5644963428\",\n    \"name\": \"Bobbie Monahan\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/clementina_ondricka\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/giovanna.bednar\",\n    \"genres\": [\n      \"disco\",\n      \"ambient\"\n    ]\n  }\n]",
+      "response_body": "[\n  {\n    \"spotify_id\": \"2168761309\",\n    \"name\": \"Lempi Bernhard\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/marguerite.brown\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/je\",\n    \"genres\": [\n      \"house\",\n      \"breakbeat\"\n    ]\n  },\n  {\n    \"spotify_id\": \"3147631474\",\n    \"name\": \"Marisa Dach\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/gregg\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/aliyah\",\n    \"genres\": [\n      \"breakbeat\",\n      \"ambient\"\n    ]\n  }\n]",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

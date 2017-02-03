@@ -1,9 +1,9 @@
 {
-  "resource": "Filter Artists",
+  "resource": "Filter artists",
   "resource_explanation": null,
   "http_method": "GET",
   "route": "/api/v1/filters/artists",
-  "description": "filtering by favorited",
+  "description": "Filtering by favorited",
   "explanation": "This method filters only favorited artists.",
   "parameters": [
     {
@@ -28,7 +28,7 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"spotify_id\": \"5572174143\",\n    \"name\": \"Bell Lowe\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/dixie_robel\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/cade_mertz\",\n    \"genres\": [\n      \"ambient\"\n    ]\n  }\n]",
+      "response_body": "[\n  {\n    \"spotify_id\": \"8626935498\",\n    \"name\": \"Mr. Conor Kozey\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/frieda.walker\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/bradley_roob\",\n    \"genres\": [\n      \"ambient\"\n    ]\n  }\n]",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

@@ -1,0 +1,35 @@
+{
+  "resource": "Filter artists",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/filters/artists",
+  "description": "Fetching default collection",
+  "explanation": "This method fetchs all artists\n                    when there is no filter parameter.",
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/filters/artists",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"spotify_id\": \"1425327116\",\n    \"name\": \"Maurice Robel Jr.\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/palma.boyle\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/krystina\",\n    \"genres\": [\n      \"ambient\"\n    ]\n  },\n  {\n    \"spotify_id\": \"9464589897\",\n    \"name\": \"Imelda Bartell V\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/jaren.bins\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/teresa_rippin\",\n    \"genres\": [\n      \"house\"\n    ]\n  },\n  {\n    \"spotify_id\": \"7812350740\",\n    \"name\": \"Jeremy Buckridge\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/hilma.schuppe\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/patience.koelpin\",\n    \"genres\": [\n      \"deep\"\n    ]\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://artists-spotify.herokuapp.com/api/v1/filters/artists\" -X GET \\\n\t-H \"Accept: application/json\""
+    }
+  ]
+}
