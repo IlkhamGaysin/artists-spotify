@@ -22,6 +22,10 @@ I was caught up in doing the test task so that decided to add basic filers: by_n
 3. Create an action to a mark an artist as a favourite, store the formatted result set.
 4. API only, no views. Responses should return JSON.
 
+[Heroku production](https://artists-spotify.herokuapp.com)
+[API Documentation](https://artists-spotify.herokuapp.com/api/docs)
+
+
 ## Dependencies
 
 * PostgreSQL
