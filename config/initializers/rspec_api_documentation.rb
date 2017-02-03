@@ -1,6 +1,6 @@
 if defined? RspecApiDocumentation
   RspecApiDocumentation.configure do |config|
-    config.format = :json
+    config.format = :html
     config.docs_dir = Rails.root.join("doc", "api", "v1")
     config.request_headers_to_include = ["Accept", "X-Auth-Token"]
     config.response_headers_to_include = ["Content-Type"]
