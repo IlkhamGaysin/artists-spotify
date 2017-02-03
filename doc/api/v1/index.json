@@ -1,0 +1,57 @@
+{
+  "resources": [
+    {
+      "name": "Artists List",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Fetching artists",
+          "link": "artists_list/fetching_artists.json",
+          "groups": "all",
+          "route": "/api/v1/artists",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Filter Artists",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Fetching artists",
+          "link": "filter_artists/fetching_artists.json",
+          "groups": "all",
+          "route": "/api/v1/filters/artists",
+          "method": "get"
+        },
+        {
+          "description": "filtering by favorited",
+          "link": "filter_artists/filtering_by_favorited.json",
+          "groups": "all",
+          "route": "/api/v1/filters/artists",
+          "method": "get"
+        },
+        {
+          "description": "filtering by genres",
+          "link": "filter_artists/filtering_by_genres.json",
+          "groups": "all",
+          "route": "/api/v1/filters/artists",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Update artist",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Marking as favorite",
+          "link": "update_artist/marking_as_favorite.json",
+          "groups": "all",
+          "route": "/api/v1/artists/:id",
+          "method": "put"
+        }
+      ]
+    }
+  ]
+}
