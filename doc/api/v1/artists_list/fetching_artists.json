@@ -24,12 +24,12 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"spotify_id\": \"5626410046\",\n    \"name\": \"Shyann Mosciski\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/brown_frami\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/okey\",\n    \"genres\": [\n      \"techno\",\n      \"breakbeat\"\n    ]\n  },\n  {\n    \"spotify_id\": \"8920179809\",\n    \"name\": \"Dr. Adan Harris\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/emmitt_skiles\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/alison\",\n    \"genres\": [\n      \"techno\",\n      \"disco\"\n    ]\n  }\n]",
+      "response_body": "[\n  {\n    \"spotify_id\": \"8120865543\",\n    \"name\": \"Edwina Grant\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/domenica\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/annamae\",\n    \"genres\": [\n      \"house\",\n      \"breakbeat\"\n    ]\n  },\n  {\n    \"spotify_id\": \"5644963428\",\n    \"name\": \"Bobbie Monahan\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/clementina_ondricka\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/giovanna.bednar\",\n    \"genres\": [\n      \"disco\",\n      \"ambient\"\n    ]\n  }\n]",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://localhost:5000/api/v1/artists\" -X GET \\\n\t-H \"Accept: application/json\""
+      "curl": "curl \"http://artists-spotify.herokuapp.com/api/v1/artists\" -X GET \\\n\t-H \"Accept: application/json\""
     }
   ]
 }

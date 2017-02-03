@@ -1,6 +1,6 @@
 require "rails_helper"
 
-resource "Filter Artists" do
+resource "Filter artists" do
   header "Accept", "application/json"
 
   subject(:body) { json_response_body }
@@ -10,9 +10,9 @@ resource "Filter Artists" do
   let!(:artist_3) { create(:artist, genres: ["deep"]) }
 
   get "/api/v1/filters/artists" do
-    example_request "Fetching artists" do
+    example_request "Fetching default collection" do
       explanation %(This method fetchs all artists
-                      when there is no filter parameter.)
+                    when there is no filter parameter.)
 
       expect(body).to be
       expect(body.size).to eq 3
@@ -25,7 +25,7 @@ resource "Filter Artists" do
 
     let(:favorite) { true }
 
-    example_request "filtering by favorited" do
+    example_request "Filtering by favorited" do
       explanation "This method filters only favorited artists."
 
       expect(body).to be
@@ -39,7 +39,7 @@ resource "Filter Artists" do
 
     let(:genres) { ["house"] }
 
-    example_request "filtering by genres" do
+    example_request "Filtering by genres" do
       explanation "This method filters artists only by genres passed."
 
       expect(body).to be

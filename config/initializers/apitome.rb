@@ -10,7 +10,7 @@ Apitome.setup do |config|
 
   # This is where rspec_api_documentation outputs the JSON files. This is configurable within RAD, and so is
   # configurable here.
-  config.doc_path = "doc/api"
+  config.doc_path = "doc/api/v1"
 
   # The title of the documentation -- If your project has a name, you'll want to put it here.
   config.title = "Artists Spotify API Documentation"
@@ -22,7 +22,7 @@ Apitome.setup do |config|
   # We're using highlight.js (https://github.com/isagalaev/highlight.js) for code highlighting, and it comes with some
   # great themes. You can check http://softwaremaniacs.org/media/soft/highlight/test.html for themes, and enter the
   # theme as lowercase/underscore.
-  config.code_theme = "monokai-sublime"
+  config.code_theme = "monokai"
 
   # This allows you to override the css manually. You typically want to require `apitome/application` within the
   # override, but if you want to override it entirely you can do so.
