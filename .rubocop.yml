@@ -55,6 +55,7 @@ Style/FrozenStringLiteralComment:
 
 Style/StringMethods:
   Enabled: true
+
 Rails/HasAndBelongsToMany:
   Enabled: false
 
@@ -71,10 +72,4 @@ RSpec/MultipleExpectations:
   Max: 4
 
 RSpec/LetSetup:
-  Enabled: false
-
-RSpec/NamedSubject:
-  Enabled: false
-
-RSpec/DescribedClass:
   Enabled: false
