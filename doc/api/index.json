@@ -1,51 +1,5 @@
 {
   "resources": [
-    {
-      "name": "Artists",
-      "explanation": null,
-      "examples": [
-        {
-          "description": "fethcing all data",
-          "link": "artists/fethcing_all_data.json",
-          "groups": "all",
-          "route": "api/v1/artists",
-          "method": "get"
-        },
-        {
-          "description": "marking as a favorite",
-          "link": "artists/marking_as_a_favorite.json",
-          "groups": "all",
-          "route": "api/v1/artists/:id",
-          "method": "put"
-        }
-      ]
-    },
-    {
-      "name": "Filter Artists",
-      "explanation": null,
-      "examples": [
-        {
-          "description": "fetching all stored data",
-          "link": "filter_artists/fetching_all_stored_data.json",
-          "groups": "all",
-          "route": "api/v1/filters/artists",
-          "method": "get"
-        },
-        {
-          "description": "filtering by favorited",
-          "link": "filter_artists/filtering_by_favorited.json",
-          "groups": "all",
-          "route": "api/v1/filters/artists",
-          "method": "get"
-        },
-        {
-          "description": "filtering by genres",
-          "link": "filter_artists/filtering_by_genres.json",
-          "groups": "all",
-          "route": "api/v1/filters/artists",
-          "method": "get"
-        }
-      ]
-    }
+
   ]
 }
