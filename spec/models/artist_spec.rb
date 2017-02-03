@@ -2,7 +2,7 @@ require "rails_helper"
 
 describe Artist do
   describe "validations" do
-    subject (:artist) { FactoryGirl.create(:artist) }
+    subject(:artist) { FactoryGirl.create(:artist) }
 
     it { expect(artist).to validate_presence_of(:name) }
     it { expect(artist).to validate_presence_of(:href) }
