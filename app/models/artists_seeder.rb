@@ -11,11 +11,11 @@ class ArtistsSeeder
     end
   end
 
+  private
+
   def record_exists?(artist)
     Artist.exists?(spotify_id: artist.id)
   end
-
-  private
 
   def save_artist!(artist)
     record = build_record(artist)
