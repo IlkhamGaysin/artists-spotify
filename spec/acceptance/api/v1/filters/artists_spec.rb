@@ -9,7 +9,7 @@ resource "Filter Artists" do
 
   subject(:response) { json_response_body }
 
-  get "api/v1/filters/artists" do
+  get "/api/v1/filters/artists" do
     example_request "fetching all stored data" do
       explanation "This method fetchs all stored artists."
 
@@ -19,7 +19,7 @@ resource "Filter Artists" do
     end
   end
 
-  get "api/v1/filters/artists" do
+  get "/api/v1/filters/artists" do
     parameter :favorite, true
 
     example_request "filtering by favorited", favorite: true do
@@ -30,7 +30,7 @@ resource "Filter Artists" do
     end
   end
 
-  get "api/v1/filters/artists" do
+  get "/api/v1/filters/artists" do
     parameter :genres, ["house"]
 
     example_request "filtering by genres", genres: ["house"] do

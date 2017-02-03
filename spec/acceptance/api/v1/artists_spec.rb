@@ -5,7 +5,7 @@ resource "Artists" do
 
   subject(:response) { json_response_body }
 
-  get "api/v1/artists" do
+  get "/api/v1/artists" do
     let!(:artists) { create_list(:artist, 2) }
 
     example_request "fethcing all data" do
@@ -17,7 +17,7 @@ resource "Artists" do
     end
   end
 
-  put "api/v1/artists/:id" do
+  put "/api/v1/artists/:id" do
     let!(:artist) { create(:artist) }
     let!(:id) { artist.id }
 
