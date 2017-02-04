@@ -32,7 +32,7 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"spotify_id\": \"6098194904\",\n    \"name\": \"Miss Freddie Lueilwitz\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/cullen\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/andreanne\",\n    \"genres\": [\n      \"house\"\n    ]\n  }\n]",
+      "response_body": "{\n  \"artists\": [\n    {\n      \"spotify_id\": \"1087611403\",\n      \"name\": \"Frederique Spencer\",\n      \"external_urls\": {\n        \"spotify\": \"http://open.spotify.com/v1/artists/rubye.miller\"\n      },\n      \"href\": \"http://api.spotify.com/v1/artists/lia_beer\",\n      \"genres\": [\n        \"house\"\n      ]\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

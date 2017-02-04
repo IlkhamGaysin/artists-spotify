@@ -28,7 +28,7 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"spotify_id\": \"8626935498\",\n    \"name\": \"Mr. Conor Kozey\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/frieda.walker\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/bradley_roob\",\n    \"genres\": [\n      \"ambient\"\n    ]\n  }\n]",
+      "response_body": "{\n  \"artists\": [\n    {\n      \"spotify_id\": \"7466784118\",\n      \"name\": \"Karlee Luettgen\",\n      \"external_urls\": {\n        \"spotify\": \"http://open.spotify.com/v1/artists/linnie_bernier\"\n      },\n      \"href\": \"http://api.spotify.com/v1/artists/stephanie\",\n      \"genres\": [\n        \"ambient\"\n      ]\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

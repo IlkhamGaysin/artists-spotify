@@ -24,7 +24,7 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"spotify_id\": \"2168761309\",\n    \"name\": \"Lempi Bernhard\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/marguerite.brown\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/je\",\n    \"genres\": [\n      \"house\",\n      \"breakbeat\"\n    ]\n  },\n  {\n    \"spotify_id\": \"3147631474\",\n    \"name\": \"Marisa Dach\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/gregg\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/aliyah\",\n    \"genres\": [\n      \"breakbeat\",\n      \"ambient\"\n    ]\n  }\n]",
+      "response_body": "{\n  \"artists\": [\n    {\n      \"spotify_id\": \"3235698682\",\n      \"name\": \"Dayana Hegmann\",\n      \"external_urls\": {\n        \"spotify\": \"http://open.spotify.com/v1/artists/elmore\"\n      },\n      \"href\": \"http://api.spotify.com/v1/artists/lizeth.bogisich\",\n      \"genres\": [\n        \"breakbeat\",\n        \"ambient\"\n      ]\n    },\n    {\n      \"spotify_id\": \"6183997426\",\n      \"name\": \"Travon Miller\",\n      \"external_urls\": {\n        \"spotify\": \"http://open.spotify.com/v1/artists/norene\"\n      },\n      \"href\": \"http://api.spotify.com/v1/artists/malachi_wunsch\",\n      \"genres\": [\n        \"ambient\",\n        \"house\"\n      ]\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

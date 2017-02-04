@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root to: "apitome/docs#index"
+
   scope defaults: { format: :json } do
     namespace :api do
       namespace :v1 do
