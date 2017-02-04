@@ -1,0 +1,35 @@
+{
+  "resource": "Filter artists",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/filters/artists",
+  "description": "Fetching default collection",
+  "explanation": "This method fetchs all artists\n                    when there is no filter parameter.",
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/filters/artists",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"artists\": [\n    {\n      \"spotify_id\": \"4495134845\",\n      \"name\": \"Tess Mante\",\n      \"external_urls\": {\n        \"spotify\": \"http://open.spotify.com/v1/artists/eldridge\"\n      },\n      \"href\": \"http://api.spotify.com/v1/artists/gerda.denesik\",\n      \"genres\": [\n        \"ambient\"\n      ]\n    },\n    {\n      \"spotify_id\": \"4257808569\",\n      \"name\": \"Brad Shields\",\n      \"external_urls\": {\n        \"spotify\": \"http://open.spotify.com/v1/artists/frederik\"\n      },\n      \"href\": \"http://api.spotify.com/v1/artists/aglae\",\n      \"genres\": [\n        \"house\"\n      ]\n    },\n    {\n      \"spotify_id\": \"3193482477\",\n      \"name\": \"Audreanne Thiel\",\n      \"external_urls\": {\n        \"spotify\": \"http://open.spotify.com/v1/artists/delbert\"\n      },\n      \"href\": \"http://api.spotify.com/v1/artists/breanne_reynolds\",\n      \"genres\": [\n        \"deep\"\n      ]\n    }\n  ]\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://artists-spotify.herokuapp.com/api/v1/filters/artists\" -X GET \\\n\t-H \"Accept: application/json\""
+    }
+  ]
+}

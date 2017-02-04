@@ -1,9 +1,9 @@
 {
-  "resource": "Filter Artists",
+  "resource": "Filter artists",
   "resource_explanation": null,
   "http_method": "GET",
   "route": "/api/v1/filters/artists",
-  "description": "filtering by favorited",
+  "description": "Filtering by favorited",
   "explanation": "This method filters only favorited artists.",
   "parameters": [
     {
@@ -28,12 +28,12 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"spotify_id\": \"3456764787\",\n    \"name\": \"Ada Cremin\",\n    \"external_urls\": {\n      \"spotify\": \"http://open.spotify.com/v1/artists/ebony.hills\"\n    },\n    \"href\": \"http://api.spotify.com/v1/artists/marcel_oreilly\",\n    \"genres\": [\n      \"ambient\"\n    ]\n  }\n]",
+      "response_body": "{\n  \"artists\": [\n    {\n      \"spotify_id\": \"7466784118\",\n      \"name\": \"Karlee Luettgen\",\n      \"external_urls\": {\n        \"spotify\": \"http://open.spotify.com/v1/artists/linnie_bernier\"\n      },\n      \"href\": \"http://api.spotify.com/v1/artists/stephanie\",\n      \"genres\": [\n        \"ambient\"\n      ]\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://localhost:5000/api/v1/filters/artists?favorite=true\" -X GET \\\n\t-H \"Accept: application/json\""
+      "curl": "curl \"http://artists-spotify.herokuapp.com/api/v1/filters/artists?favorite=true\" -X GET \\\n\t-H \"Accept: application/json\""
     }
   ]
 }

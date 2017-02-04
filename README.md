@@ -55,7 +55,3 @@ bin/server
 ## Servers
 
 [Heroku production](https://artists-spotify.herokuapp.com)
-
-## API
-
-[API Documentation](https://artists-spotify.herokuapp.com/api/docs)

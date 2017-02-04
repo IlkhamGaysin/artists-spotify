@@ -1,12 +1,12 @@
 {
   "resources": [
     {
-      "name": "Artists List",
+      "name": "Artists list",
       "explanation": null,
       "examples": [
         {
-          "description": "Fetching artists",
-          "link": "artists_list/fetching_artists.json",
+          "description": "Fetching collection",
+          "link": "artists_list/fetching_collection.json",
           "groups": "all",
           "route": "/api/v1/artists",
           "method": "get"
@@ -14,25 +14,25 @@
       ]
     },
     {
-      "name": "Filter Artists",
+      "name": "Filter artists",
       "explanation": null,
       "examples": [
         {
-          "description": "Fetching artists",
-          "link": "filter_artists/fetching_artists.json",
+          "description": "Fetching default collection",
+          "link": "filter_artists/fetching_default_collection.json",
           "groups": "all",
           "route": "/api/v1/filters/artists",
           "method": "get"
         },
         {
-          "description": "filtering by favorited",
+          "description": "Filtering by favorited",
           "link": "filter_artists/filtering_by_favorited.json",
           "groups": "all",
           "route": "/api/v1/filters/artists",
           "method": "get"
         },
         {
-          "description": "filtering by genres",
+          "description": "Filtering by genres",
           "link": "filter_artists/filtering_by_genres.json",
           "groups": "all",
           "route": "/api/v1/filters/artists",

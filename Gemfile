@@ -34,18 +34,15 @@ group :development, :test do
   gem "brakeman"
   gem "bundler-audit"
   gem "byebug", platform: :mri
+  gem "codeclimate-test-reporter", "< 1.0", require: false
   gem "database_cleaner"
   gem "dotenv-rails"
   gem "factory_girl_rails"
   gem "faker"
+  gem "json_spec"
   gem "rspec-rails"
   gem "rubocop", require: false
   gem "rubocop-rspec", require: false
-end
-
-group :test do
-  gem "codeclimate-test-reporter", "< 1.0", require: false
-  gem "json_spec"
   gem "shoulda-matchers", require: false
   gem "webmock", require: false
 end
