@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  scope defaults: { format: :json } do
-    root to: "api/v1/artists#index"
+  root to: "apitome/docs#index"
 
+  scope defaults: { format: :json } do
     namespace :api do
       namespace :v1 do
         resources :artists, only: %i(index update)
