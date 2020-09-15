@@ -18,6 +18,7 @@ jobs:
       DATABASE_URL: postgresql://postgres@localhost/test
       HOST: localhost
       COVERAGE_DIR: ./coverage
+      MAILER_SENDER_ADDRESS: noreply@example.com
 
     executor: ruby/default
     steps:
