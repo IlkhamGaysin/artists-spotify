@@ -26,7 +26,7 @@ I was caught up in doing the test task so that decided to add basic filers: by_n
 ## Dependencies
 
 * PostgreSQL
-* Ruby 2.3.1
+* Ruby 2.6.6
 * Rails 5
 
 ## Quick Start

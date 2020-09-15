@@ -1,5 +1,5 @@
-class SortedArtistsQuery
-  FILTERS = %i(by_name by_genres by_favorite).freeze
+class FilteredArtistsQuery
+  FILTERS = %i[by_name by_genres by_favorite].freeze
 
   def initialize(params = {}, relation = Artist.all)
     @params = params
@@ -35,7 +35,7 @@ class SortedArtistsQuery
   def by_favorite
     favorite = @params[:favorite].to_s
 
-    return @relation unless favorite == "true" || favorite == "false"
+    return @relation unless %w[true false].include?(favorite)
 
     @relation.where(favorite: favorite)
   end

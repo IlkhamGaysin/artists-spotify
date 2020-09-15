@@ -10,21 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170202123445) do
+ActiveRecord::Schema.define(version: 2020_09_13_174217) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "artists", force: :cascade do |t|
-    t.string   "spotify_id",                    null: false
-    t.jsonb    "external_urls", default: "{}",  null: false
-    t.jsonb    "genres",        default: "[]",  null: false
-    t.string   "href",                          null: false
-    t.string   "name",                          null: false
-    t.datetime "created_at",                    null: false
-    t.datetime "updated_at",                    null: false
-    t.boolean  "favorite",      default: false, null: false
-    t.index ["spotify_id"], name: "index_artists_on_spotify_id", using: :btree
+  create_table "artists", id: :serial, force: :cascade do |t|
+    t.string "spotify_id", null: false
+    t.jsonb "external_urls", default: "{}", null: false
+    t.jsonb "genres", default: "[]"
+    t.string "href", null: false
+    t.string "name", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.boolean "favorite", default: false, null: false
+    t.index ["external_urls"], name: "index_artists_on_external_urls"
+    t.index ["href"], name: "index_artists_on_href", unique: true
+    t.index ["spotify_id"], name: "index_artists_on_spotify_id", unique: true
   end
 
 end

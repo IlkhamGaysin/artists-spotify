@@ -1,14 +1,21 @@
 {
   "name": "artists-spotify",
+  "scripts": {
+    "postdeploy": "bundle exec rails db:schema:load fetch:artists"
+  },
   "env": {
     "RACK_ENV": "staging",
     "RAILS_ENV": "staging",
-    "HOST": { "required": true },
-    "LANG": { "required": true },
+    "HEROKU_APP_NAME": { "required": true },
+    "LANG": "en_US.UTF-8",
+    "RAILS_SERVE_STATIC_FILES": true,
+    "SPOTIFY_API_KEY": { "required": true },
+    "SPOTIFY_APY_KEY_SECRET": { "required": true },
     "MAILER_SENDER_ADDRESS": "\"Artists Spotify\" <noreply@example.com>",
     "SECRET_KEY_BASE": { "generator": "secret" }
   },
   "addons": [
-    "heroku-postgresql"
+    "heroku-postgresql",
+    "scheduler"
   ]
 }
