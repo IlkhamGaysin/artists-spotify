@@ -44,6 +44,7 @@ group :development, :test do
   gem "factory_bot_rails"
   gem "faker"
   gem "json_spec"
+  gem "pry-rails"
   gem "rspec_junit_formatter", require: false
   gem "rspec-rails"
   gem "rubocop", require: false
