@@ -2,7 +2,7 @@
 
 [![IlkhamGaysin](https://circleci.com/gh/IlkhamGaysin/artists-spotify.svg?style=svg)](https://circleci.com/gh/IlkhamGaysin/artists-spotify)
 [![Maintainability](https://api.codeclimate.com/v1/badges/8eccde3602d94ba855c3/maintainability)](https://codeclimate.com/github/IlkhamGaysin/artists-spotify/maintainability)
-[![Test Coverage](https://codeclimate.com/github/IlkhamGaysin/artists-spotify/badges/coverage.svg)](https://codeclimate.com/github/IlkhamGaysin/artists-spotify/coverage)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/8eccde3602d94ba855c3/test_coverage)](https://codeclimate.com/github/IlkhamGaysin/artists-spotify/test_coverage)
 
 The project was built while working on simple test task.
 It's API that allows to show artists from spotify and update a specified artist as a favorite.
