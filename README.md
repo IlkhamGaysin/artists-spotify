@@ -1,6 +1,6 @@
 # Artists Spotify
 
-[![Build Status](https://semaphoreci.com/api/v1/ilkhamgaysin/artists-spotify/branches/master/shields_badge.svg)](https://semaphoreci.com/ilkhamgaysin/artists-spotify)
+[![IlkhamGaysin](https://circleci.com/gh/IlkhamGaysin/artists-spotify.svg?style=svg)](https://circleci.com/gh/IlkhamGaysin/artists-spotify)
 [![Code Climate](https://codeclimate.com/github/IlkhamGaysin/artists-spotify/badges/gpa.svg)](https://codeclimate.com/github/IlkhamGaysin/artists-spotify)
 [![Test Coverage](https://codeclimate.com/github/IlkhamGaysin/artists-spotify/badges/coverage.svg)](https://codeclimate.com/github/IlkhamGaysin/artists-spotify/coverage)
 
