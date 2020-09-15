@@ -2,7 +2,7 @@ module Api
   module V1
     module Filters
       class ArtistsController < ApplicationController
-        expose :artists, -> { SortedArtistsQuery.new(filter_params).all }
+        expose :artists, -> { FilteredArtistsQuery.new(filter_params).all }
 
         def index
           respond_with artists

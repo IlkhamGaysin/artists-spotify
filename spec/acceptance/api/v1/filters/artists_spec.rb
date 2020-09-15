@@ -14,7 +14,7 @@ resource "Filter artists" do
       explanation %(This method fetchs all artists
                     when there is no filter parameter.)
 
-      expect(response_body).to be_artists_representation(artists, exclude_keys: %w(favorite id))
+      expect(response_body).to be_artists_representation(artists, exclude_keys: %w[favorite id])
       expect(response_status).to eq 200
     end
   end
@@ -28,7 +28,7 @@ resource "Filter artists" do
     example_request "Filtering by favorited" do
       explanation "This method filters only favorited artists."
 
-      expect(response_body).to be_artists_representation(artists, exclude_keys: %w(favorite id))
+      expect(response_body).to be_artists_representation(artists, exclude_keys: %w[favorite id])
       expect(response_status).to eq 200
     end
   end
@@ -42,7 +42,7 @@ resource "Filter artists" do
     example_request "Filtering by genres" do
       explanation "This method filters artists only by genres passed."
 
-      expect(response_body).to be_artists_representation(artists, exclude_keys: %w(favorite id))
+      expect(response_body).to be_artists_representation(artists, exclude_keys: %w[favorite id])
       expect(response_status).to eq 200
     end
   end
