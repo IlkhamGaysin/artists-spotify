@@ -10,7 +10,7 @@ gem "sprockets", "<4"
 # I downgraded to 3-rd version https://github.com/rails/sprockets-rails/issues/444
 
 # server
-gem "puma", "~> 3.0"
+gem "puma", "~> 4.3"
 
 # CORS
 gem "rack-attack"
