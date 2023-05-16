@@ -99,7 +99,6 @@ jobs:
   deploy:
     needs: tests
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/production'
 
     env:
       HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
@@ -122,5 +121,5 @@ jobs:
         run: |
           heroku git:remote -a artists-spotify
           heroku maintenance:on
-          git push heroku HEAD:master -f
+          git push heroku HEAD:upgrade-rails-to-5.2.8 -f
           heroku maintenance:off
