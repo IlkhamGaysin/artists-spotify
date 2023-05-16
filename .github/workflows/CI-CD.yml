@@ -94,7 +94,7 @@ jobs:
 
       - name: Run Code Climate coverage upload
         run: |
-          ./cc-d-reporter sum-coverage --output - ./coverage/codeclimate.*.json | ./cc-test-reporter upload-coverage --debug --input -
+          ./cc-test-reporter sum-coverage --output - ./coverage/codeclimate.*.json | ./cc-test-reporter upload-coverage --debug --input -
 
   deploy:
     needs: tests
