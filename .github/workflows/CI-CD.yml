@@ -100,26 +100,14 @@ jobs:
     needs: tests
     runs-on: ubuntu-latest
 
-    env:
-      HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up Heroku
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
-
-      - name: Install Heroku CLI
-        run: |
-          curl https://cli-assets.heroku.com/install.sh | sh
-          heroku --version
-
       - name: Deploy to Heroku
-        run: |
-          heroku git:remote -a artists-spotify
-          heroku maintenance:on
-          git push heroku HEAD:upgrade-rails-to-5.2.8 -f
-          heroku maintenance:off
+        uses: AkhileshNS/heroku-deploy@v3.12.14
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: artists-spotify
+          heroku_email: ${{secrets.HEROKU_EMAIL}}
+          branch: upgrade-rails-to-5.2.8
