@@ -3,7 +3,7 @@ source "https://rubygems.org"
 ruby "2.6.6"
 
 gem "pg"
-gem "rails", "~> 5.2.4.4"
+gem "rails", "~> 5.2.5"
 gem "sprockets", "<4"
 # Apitome doesn't support sprockets 4 and
 # rails enforces to create manifest.js file so
