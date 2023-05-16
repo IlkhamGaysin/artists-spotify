@@ -1,0 +1,115 @@
+name: CI/CD
+
+on: [push]
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:11.5
+        ports:
+          - "5432:5432"
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: test
+
+    env:
+      RAILS_ENV: test
+      DATABASE_URL: postgresql://postgres@localhost:5432/test
+      HOST: localhost
+      COVERAGE_DIR: ./coverage
+      MAILER_SENDER_ADDRESS: noreply@example.com
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6.6
+
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install --jobs 4 --retry 3
+
+      - name: Database setup
+        run: bundle exec rails db:test:prepare
+
+      - name: Check seeds
+        run: |
+          bundle exec rails db:seed
+
+      - name: Download cc-test-reporter
+        run: |
+          if ! [ -f ./cc-test-reporter ]; then
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+            chmod +x ./cc-test-reporter
+          fi
+
+      - name: Prepare Code Climate Reporter
+        run: ./cc-test-reporter before-build
+
+      - name: Run tests
+        run: bundle exec rspec
+
+      - name: Code Climate Test Coverage
+        run: |
+          ./cc-test-reporter format-coverage -t simplecov -o "$COVERAGE_DIR/codeclimate.${{ runner.os }}.json"
+
+      - name: Persist coverage and test reporter
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage
+          path: |
+            ./coverage/**
+            ./cc-test-reporter
+
+  upload-coverage:
+    needs: tests
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/production'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Attach workspace
+        uses: actions/checkout@v2
+        with:
+          path: ./
+
+      - name: Run Code Climate coverage upload
+        run: |
+          ./cc-test-reporter sum-coverage --output - ./coverage/codeclimate.*.json | ./cc-test-reporter upload-coverage --debug --input -
+
+  deploy:
+    needs: tests
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/production'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Heroku
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install Heroku CLI
+        run: |
+          curl https://cli-assets.heroku.com/install.sh | sh
+          heroku --version
+
+      - name: Deploy to Heroku
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+        run: |
+          heroku git:remote -a artists-spotify
+          heroku maintenance:on
+          git push heroku HEAD:master -f
+          heroku maintenance:off
